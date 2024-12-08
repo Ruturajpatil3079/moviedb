@@ -1,74 +1,74 @@
-*{
-  font-family: "Poppins", sans-serif;;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-
 .fade-in {
-    opacity: 0;
-    animation: fadeIn 1.3s forwards;
+  opacity: 0;
+  animation: fadeIn 1.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
-  
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-  /*Navbar*/
-  .custom-navbar {
-    background-color: #4d4d4d;
-  }
-  .navbar-brand{
-    font-weight: 600;
-  }
-  .navbar-brand-link {
-    color: white !important;
-    text-decoration: none ; 
-  }
-  
-  .navbar-links {
-    margin-left: auto;
-  }
-  
-  .navbar-link {
-    color: rgb(167, 167, 167) !important;
-    font-weight: 600 !important;
-    text-decoration: none;
-    margin-right: 20px;
-  }
-  
-  .navbar-link:hover {
-    color: #f8f9fa !important;
-  }
-  
-  .navbar-toggle {
-    border-color: white;
-  }
+}
+/*Navbar*/
+.custom-navbar {
+  background-color: #4d4d4d;
+}
+.navbar-brand {
+  font-weight: 600;
+}
+.navbar-brand-link {
+  color: white !important;
+  text-decoration: none;
+}
+
+.navbar-links {
+  margin-left: auto;
+}
+
+.navbar-link {
+  color: rgb(167, 167, 167) !important;
+  font-weight: 600 !important;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar-link:hover {
+  color: #f8f9fa !important;
+}
+
+.navbar-toggle {
+  border-color: white;
+}
 
 /*--------*/
-  
-body, html{
+
+body,
+html {
   color: whitesmoke !important;
 }
 
 /*card-movie*/
 .movie-card {
   transition: transform 0.6s ease, box-shadow 0.3s ease;
-  border: none; 
+  border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .movie-card {
   transition: transform 0.6s ease, box-shadow 0.3s ease;
-  border: none; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .movie-card:hover {
-  transform: scale(1.03); 
-  box-shadow: 0 3px 12px rgba(0, 255, 255, 0.6); 
+  transform: scale(1.03);
+  box-shadow: 0 3px 12px rgba(0, 255, 255, 0.6);
 }
 
 .movie-card img {
-  height: 350px; 
+  height: 350px;
 }
 
 .card-title {
@@ -89,7 +89,7 @@ body, html{
 
 @media (max-width: 767px) {
   .movie-card img {
-    height: 200px; 
+    height: 350px;
   }
 
   .card-body {
@@ -106,9 +106,9 @@ body, html{
 }
 
 .truncate-title {
-  white-space: nowrap; 
-  overflow: hidden;    
-  text-overflow: ellipsis; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /*-0--------*/
 
@@ -143,7 +143,7 @@ body, html{
 
 .scroll-container {
   position: relative;
-  height: 100vh; 
+  height: 100vh;
   overflow-y: scroll;
   background-color: #343434;
   padding: 0;
@@ -156,16 +156,16 @@ body, html{
 
 /* Scroll Buttons */
 .custom-card {
-  width: 260px; 
-  height: 370px !important; 
+  width: 260px;
+  height: 370px !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .card-img-wrapper {
-  height: 240px; 
+  height: 240px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -180,7 +180,7 @@ body, html{
 }
 
 .custom-card .card-title {
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
@@ -188,7 +188,7 @@ body, html{
 .custom-card .card-text {
   font-size: 1rem;
   margin-top: 0.2rem;
-  line-height: 1.4; 
+  line-height: 1.4;
 }
 
 @media (max-width: 768px) {
@@ -215,7 +215,7 @@ body, html{
 }
 
 .scroll-icon.up {
-  top: 55px; 
+  top: 55px;
   right: 10px;
 }
 
@@ -235,8 +235,8 @@ body, html{
 
 .custom-scrollbar {
   position: fixed;
-  top: 100px; 
-  bottom: 50px; 
+  top: 100px;
+  bottom: 50px;
   right: 17px;
   width: 8px;
   background: rgba(255, 255, 255, 0.2);
@@ -260,15 +260,13 @@ body, html{
   opacity: 1;
 }
 
-
 @media (max-width: 768px) {
   .custom-scrollbar,
   .scroll-icon {
-    display: none; 
+    display: none;
   }
 }
 /*---------------*/
-
 
 /* Movie Details*/
 .movie-details-banner {
@@ -277,7 +275,7 @@ body, html{
   background-position: center;
   position: relative;
   height: 500px;
-  border-radius: 20px 20px 0 0; 
+  border-radius: 20px 20px 0 0;
   overflow: hidden;
 }
 
@@ -287,7 +285,11 @@ body, html{
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.9) 20%,
+    rgba(0, 0, 0, 0) 50%
+  );
   z-index: 1;
 }
 
@@ -298,20 +300,19 @@ body, html{
   transform: translateY(-10%);
   z-index: 2;
   color: white;
-  max-width: 50%; 
+  max-width: 50%;
   padding: 20px;
 }
 
 .timerounded {
-  border: 1px solid; 
-  border-radius: 8px; 
-  padding: 2px 7px; 
-  display: inline-block; 
-  text-align: center; 
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 2px 7px;
+  display: inline-block;
+  text-align: center;
   font-size: 14px;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
-
 
 @media (max-width: 768px) {
   .movie-details-content {
@@ -331,8 +332,6 @@ body, html{
   .movie-details-content p {
     font-size: 0.9rem;
   }
-
-  
 
   .movie-details-content .movie-poster {
     max-width: 100px;
@@ -382,12 +381,11 @@ body, html{
   }
 }
 
-
 /* -------------------*/
 
 /* Footer */
 footer {
-  position: relative; 
+  position: relative;
   width: 100%;
   text-align: center;
   font-size: 14px;
@@ -403,6 +401,6 @@ footer a:hover {
 }
 /*------------*/
 
-.active{
+.active {
   color: whitesmoke !important;
 }

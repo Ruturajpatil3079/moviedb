@@ -1,16 +1,16 @@
-import './App.css';
-import Home from './Components/Home';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import MovieDetails from './Components/MovieDetails';
-import NavbarComponent from './common/Navbar';
-import UpcomingMovies from './Components/UpcomingMovies';
-import TopRatedMovies from './Components/TopRatedMovies';
-import ScrollComponent from './common/ScrollComponent';
-import { useState } from 'react';
-import Footer from './common/Footer';
+import "./App.css";
+import Home from "./components/Home";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import MovieDetails from "./components/MovieDetails";
+import NavbarComponent from "./common/Navbar";
+import UpcomingMovies from "./components/UpcomingMovies";
+import TopRatedMovies from "./components/TopRatedMovies";
+import ScrollComponent from "./common/ScrollComponent";
+import { useState } from "react";
+import Footer from "./common/Footer";
 
 function App() {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = (query) => {
     setSearchQuery(query);
@@ -27,7 +27,7 @@ function App() {
           <Route path="/top-rated" element={<TopRatedMovies />} />
         </Routes>
       </Router>
-      <Footer/>
+      <Footer />
     </ScrollComponent>
   );
 }
