@@ -351,7 +351,7 @@ html {
 }
 
 .card-img-wrapper {
-  height: 250px;
+  height: 400px;
   overflow: hidden;
   display: flex;
   align-items: center;
